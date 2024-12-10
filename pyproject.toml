@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lezgi-text"
+version = "0.0.1"
+authors = [
+  { name="Alidar Asvarov", email="alidar.asvarov@gmail.com" },
+]
+description = "A toolkit for working with text in Lezgian language"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy >= 2.1.0",
+    "pymupdf >= 1.24.0",
+    "fasttext-wheel == 0.9.2",
+    "nltk >= 3.9.0",
+    "huggingface_hub >= 0.26.3",
+    "tqdm >= 4.67.1",
+    "requests >= 2.32.3",
+    "selenium >= 4.27.1",
+    "beautifulsoup4 >= 4.12.3",
+    "lxml >= 5.2.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/Alidar40/lezgi-text"
+Issues = "https://github.com/Alidar40/lezgi-text/issues"
+
+[project.scripts]
+lezgitext = "lezgi_text.__main__:main"
+lezgi-text = "lezgi_text.__main__:main"
+lezgi_text = "lezgi_text.__main__:main"
